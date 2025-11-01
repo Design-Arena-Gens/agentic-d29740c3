@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light dark; }
+html, body { margin: 0; padding: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+
+.container { max-width: 900px; margin: 0 auto; padding: 24px; }
+.header { margin-bottom: 16px; }
+.subtitle { color: #666; margin-top: 4px; }
+.footer { margin-top: 32px; color: #777; font-size: 14px; }
+
+.chat { display: grid; gap: 16px; }
+.chat-window { border: 1px solid #e5e7eb; border-radius: 8px; padding: 12px; height: 420px; overflow: auto; background: #fafafa; }
+.msg { display: grid; grid-template-columns: 80px 1fr; gap: 8px; padding: 8px; border-bottom: 1px dashed #eee; }
+.msg-role { text-transform: uppercase; font-size: 12px; color: #6b7280; }
+.msg-content { white-space: pre-wrap; line-height: 1.5; }
+.msg-user .msg-content { color: #111827; }
+.msg-assistant .msg-content { color: #0f766e; }
+.msg-system .msg-content { color: #374151; }
+
+.composer { display: grid; grid-template-columns: 1fr auto; gap: 8px; }
+.composer input { padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 8px; }
+.composer button { padding: 10px 14px; border-radius: 8px; border: 1px solid #0ea5e9; background: #0284c7; color: white; }
+.composer button:disabled { opacity: 0.6; }
+
+.howto { margin-top: 8px; }
+.code { background: #0b1020; color: #e5e7eb; padding: 12px; border-radius: 8px; overflow: auto; }
